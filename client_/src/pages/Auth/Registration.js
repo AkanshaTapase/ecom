@@ -39,7 +39,7 @@ const Register = () => {
 
   return (
     <Layout title="Register - Ecommer App">
-      <div className="flex justify-center items-center min-h-screen bg-[url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfTkC9kfAHScQDUC3rTUNC1Cf0D1HXh1wd8Q&s')]">
+      <div className="flex justify-center items-center min-h-screen bg-cover bg-center bg-[url('https://t4.ftcdn.net/jpg/02/86/36/11/360_F_286361199_fzZsOpZ3memFzCn889a9TZHMuTTsFrVl.jpg')]">
         <form
           onSubmit={handleSubmit}
           className="bg-white p-6 rounded-lg shadow-md w-full max-w-sm"
