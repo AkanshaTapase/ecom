@@ -1,8 +1,9 @@
 {
   "name": "e-commerce",
   "version": "1.0.0",
-  "main": "server.js",
   "type": "module",
+  "main": "server.js",
+  
   "dependencies": {
     "abab": "^2.0.6",
     "abbrev": "^1.1.1",
