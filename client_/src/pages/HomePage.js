@@ -2,7 +2,7 @@
 import Layout from "../components/layout/layout";
 import React, { useEffect } from 'react';
 import { useAuth } from "../context/auth";
-
+import DiscountRibbon from "../components/DiscountRibbon";
 const trends = [
   { id: 1, title: 'Oversized Blazers', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB8MIdqzqIMzbSlkQmZkwv9V-zEGraRPjlbw&s' },
   { id: 2, title: 'Floral Prints', img: 'https://images.glowroad.com/faceview/g3b/bh/j3i/b1e/imgs/1651220828342_16_22_Ruchi4-xlgn400x400.jpg?productId=P-6517534' },
@@ -26,6 +26,11 @@ const HomePage = () => {
   return (
     <Layout>
      <div className="flex-col">
+     <DiscountRibbon 
+        couponCode="SAVE20" 
+        couponDescription="Get 20% off on your next purchase" 
+        duration={600} 
+      />
     <div className="relative overflow-hidden h-96 bg-gray-100">
       <div className="absolute flex h-full w-[200%] animate-scroll">
         {trends.concat(trends).map((trend, index) => (

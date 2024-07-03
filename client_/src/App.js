@@ -10,7 +10,7 @@ import Dashboard from "./pages/user/Dashboard";
 import PrivateRoute from "./components/Routes/private";
 import ForgotPasssword from "./pages/Auth/ForgotPassword";
 
-import AdminRoute from "./components/Routes/AdminRoutes";
+import AdminRoute from "./components/Routes/AdminRoute";
 import AdminDashboard from "./pages/Admin/AdminDashboard"
 import CreateCategory from "./pages/Admin/CreateCategory";
 import CreateProduct from "./pages/Admin/CreateProduct";

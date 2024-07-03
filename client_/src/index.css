@@ -107,3 +107,22 @@
   align-items: center;
   justify-content: center;
 }
+@keyframes pulse {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes marquee {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+.bg-celebration {
+  background-image: black; /* Replace with your dynamic celebration bomb image URL */
+  background-size: cover;
+  animation: pulse 10s infinite;
+}
+.animate-marquee {
+  animation: marquee 20s linear infinite;
+}

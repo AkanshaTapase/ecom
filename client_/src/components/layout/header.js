@@ -16,6 +16,7 @@ const Header = () => {
   };
   return (
     <>
+    
       <nav class="navbar navbar-inverse bg-gradient-to-r from-cyan-500 to-blue-500">
   <div class="container-fluid text-black">
     <div class="navbar-header">
@@ -49,7 +50,7 @@ const Header = () => {
                 <>
                    <li className="nav-item dropdown">
                     <NavLink
-                      className="nav-link dropdown-toggle"
+                      className="nav-link dropdown-toggle text-black"
                       href="#"
                       role="button"
                       data-bs-toggle="dropdown"
@@ -91,6 +92,9 @@ const Header = () => {
    
   </div>
 </nav>
+
+
+
     </>
   );
 };
