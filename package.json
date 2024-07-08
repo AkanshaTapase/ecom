@@ -736,6 +736,7 @@
     "simple-update-notifier": "^2.0.0",
     "sisteransi": "^1.0.5",
     "slash": "^3.0.0",
+    "slugify": "^1.6.6",
     "sockjs": "^0.3.24",
     "source-list-map": "^2.0.1",
     "source-map": "^0.7.4",
