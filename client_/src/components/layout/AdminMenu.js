@@ -8,19 +8,19 @@ const AdminMenu = () => {
           <h4>Admin Panel</h4>
           <NavLink
             to="/dashboard/admin/create-category"
-            className="list-group-item list-group-item-action"
+            className="list-group-item list-group-item-action bg-slate-200"
           >
             Create Category
           </NavLink>
           <NavLink
             to="/dashboard/admin/create-product"
-            className="list-group-item list-group-item-action"
+            className="list-group-item list-group-item-action bg-slate-200"
           >
             Create Product
           </NavLink>
           <NavLink
             to="/dashboard/admin/users"
-            className="list-group-item list-group-item-action"
+            className="list-group-item list-group-item-action bg-slate-200"
           >
             Users
           </NavLink>

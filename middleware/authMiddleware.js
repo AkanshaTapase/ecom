@@ -4,7 +4,11 @@ import userModel from "../model/userModel.js";
 //protected  Routed token base
 export const requireSignIN=async(req,res,next)=>{
     try{
-        const decode=JWT.verify(req.headers.authorization,process.env.JWT_SECRET)
+        const decode = JWT.verify(
+            req.headers.authorization,
+            process.env.JWT_SECRET
+          );
+          req.user = decode;
         next();
     }
   catch(error)
@@ -27,6 +31,11 @@ export const isAdmin=async (req,res,next)=>{
         next();
      }
     }catch(error){
-        console.log(error)
+        console.log(error);
+    res.status(401).send({
+      success: false,
+      error,
+      message: "Error in admin middelware",
+    });
     }
 };
